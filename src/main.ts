@@ -1,7 +1,6 @@
 import { Plugin } from 'obsidian';
 import type { BasesView } from 'obsidian';
 import type { QueryController } from 'obsidian';
-import { aiChartRegistration } from './aiCharts/aiChart';
 import { barChartRegistration } from './dataCharts/charts/barChart';
 import { lineChartRegistration } from './dataCharts/charts/lineChart';
 import { pieChartRegistration } from './dataCharts/charts/pieChart';
@@ -22,7 +21,6 @@ const chartRegistrations: ChartRegistration[] = [
 	lineChartRegistration,
 	barChartRegistration,
 	pieChartRegistration,
-	aiChartRegistration,
 ];
 
 export default class BasesChartsPlugin extends Plugin {
