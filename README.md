@@ -4,21 +4,13 @@
 
 ![Banner](images/banner.png)
 
-An [Obsidian](https://obsidian.md) plugin that adds interactive chart views to Bases, powered by [Apache ECharts](https://echarts.apache.org/). Build data-driven charts manually or generate any ECharts visualization with AI via [Claudian](https://github.com/YishenTu/claudian).
-
-### Design Philosophy
-
-This plugin offers two fundamentally different approaches to charting:
-
-- **Data Charts** — Each supported chart type is carefully crafted with purpose-built controls for aggregation, grouping, axis configuration, and interactivity. Rather than exposing the full complexity of ECharts, we focus on polishing a curated set of chart types and gradually expanding support.
-- **AI Chart** — Fully AI-driven. You simply describe what you want in a conversation with Claudian, and it handles everything — reading your data, choosing the right chart type, and writing the complete ECharts configuration. No manual configuration needed.
+An [Obsidian](https://obsidian.md) plugin that adds interactive chart views to Bases, powered by [Apache ECharts](https://echarts.apache.org/).
 
 ## How It Works
 
 1. Create a [Base](https://help.obsidian.md/bases) in your vault.
 2. Add a new view and select a chart type — either a **Data Chart** (Scatter, Line, Bar, Pie) or an **AI Chart**.
 3. For Data Charts, configure the X axis and Y axes in the view settings. The plugin reads your Bases data and renders charts automatically.
-4. For AI Charts, install [Claudian](https://github.com/YishenTu/claudian) first. The plugin has deep integration with Claudian — you can chat with it to generate, modify, and iterate on any ECharts visualization. See [AI Chart](#ai-chart) for details.
 
 ## Data Charts
 
@@ -39,12 +31,6 @@ Built-in chart views that visualize Bases data with configurable axes, aggregati
 - Group by support: groups become colored series within each chart
 - Interactive tooltips with clickable file links
 - X axis sorting via Bases Sort configuration
-
-## AI Chart
-
-Generate any ECharts visualization using [Claudian](https://github.com/YishenTu/claudian). The AI Chart view supports the full ECharts option spec — line, bar, scatter, pie, radar, heatmap, treemap, sunburst, graph, sankey, gauge, funnel, candlestick, boxplot, parallel, and more.
-
-![AI Chart](images/ai-charts.png)
 
 ### Setup
 
@@ -81,7 +67,9 @@ Generate any ECharts visualization using [Claudian](https://github.com/YishenTu/
 
 ## Acknowledgements
 
-This plugin started as a fork of [obsidian-bases-charts-plugin](https://github.com/mProjectsCode/obsidian-bases-charts-plugin) by [mProjectsCode](https://github.com/mProjectsCode), and has since been fully rewritten from scratch using native TypeScript and [Apache ECharts](https://echarts.apache.org/). AI Chart is powered by [Claudian](https://github.com/YishenTu/claudian).
+This plugin started as a fork of [obsidian-bases-charts-plugin](https://github.com/mProjectsCode/obsidian-bases-charts-plugin) by [mProjectsCode](https://github.com/mProjectsCode), and has since been fully rewritten from scratch using native TypeScript and [Apache ECharts](https://echarts.apache.org/).
+
+This `noai` version is a soft fork that removes all LLM-based features.
 
 ## Contributions
 
